@@ -1,9 +1,12 @@
+#create a title
 print "\t\t\t ----------------"
 print "\t\t\t Coffee Trivia!"
 
 print "\t\t\t Wake up and test your coffee knowledge!"
 print "\t\t\t ----------------"
 print("Get ready to fill in the blanks! How hard would you like this to be?")
+
+#game modes
 easy = "\n \n \n The best part of waking up, is ___1___ in your cup! \n An Americano is ___2___ and ___3___. \n Chocolate is added to coffee to make it a ___4___. \n \n \n" 
 med = "\n \n \n Blue Mountain coffee comes from ___1___. \n Kona coffee comes from ___2___. \n Coffee is the ___3___ largest traded commodity in the world. Oil is the first.  \n Starbucks headquarters is in the city of ___4___. \n"
 hard = "\n \n \n ___1___ is the country that exports the most coffee.\n The word coffee evolved from the ___2___ word 'Qahwa' meaning wine of the bean. \n The worlds most expensive coffee is from indonesia and is called ___3___. \n There are two major varieties of coffee plants, Arabica and ___4___. \n" 
@@ -15,6 +18,7 @@ hard_answers = ['Brazil', 'arabic' 'Kopi Luwak' 'robusta']
 
 user_answers = []
 
+#ok... lots of repitition here but I couldnt figure out how to make this a function...
 while True:
   difficulty = raw_input("Type: easy, medium, or hard: ")  
   if difficulty == "easy":
@@ -53,7 +57,7 @@ while True:
   else:
     print("Hey! Just choose a difficulty!")      
 
-
+# I wanted to avoid repeating here as well but i got errors when i tried to chain all the if, elif statements. Also need to figure out a way to match one answer at a time. played with split but couldnt get it... ill keep trying.
 while True:
   if user_answers == easy_answers:
     print ("YOU WIN!") 
