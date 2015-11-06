@@ -15,10 +15,10 @@ easy_answers = ['Folgers', 'espresso', 'water', 'mocha']
 easy_answers2 = ['Folgers', 'water', 'espresso', 'mocha']
 med_answers = ['Jamaica', 'Hawaii', 'second', 'Seattle'  ]
 hard_answers = ['Brazil', 'arabic' 'Kopi Luwak' 'robusta']
-
+#just appending user inputs into this
 user_answers = []
 
-#ok... lots of repitition here but I couldnt figure out how to make this a function...
+#ok... lots of repitition here but I couldnt figure out how to make this a function... Actually not even sure if I need a while loop. was thinking of adding a play again so thats why I thought it might be worthwhile.
 while True:
   difficulty = raw_input("Type: easy, medium, or hard: ")  
   if difficulty == "easy":
